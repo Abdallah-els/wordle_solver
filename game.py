@@ -38,7 +38,7 @@ class GameLogic:
         while max_guess:
             self.guess = input("Enter your guess: ")
             
-            if (self.guess not in self.content_of_3k or 
+            if (self.guess not in self.content_of_3k and 
                 self.guess not in self.content_of_13k):
                 print("Please enter an english word\n")
                 continue
@@ -64,7 +64,6 @@ def start_the_game():
     start_game.json_file()
     start_game.randomize_file()
     start_game.main_logic()
-
 
 
 
