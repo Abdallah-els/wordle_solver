@@ -86,8 +86,6 @@ def get_remaining_answers(current_remaining_answers, guess, feedback):
     return remaining
 
     
-    
-
 if __name__ == "__main__":
     answers = load_json('dataset/targets_5_letter.json')
     dictionary = load_json('dataset/dictionary_5_letter.json')
