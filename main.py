@@ -49,8 +49,10 @@ if __name__ == "__main__":
         )
         remaining_idx_len = len(remaining_idx)
 
-
-    answer = target_list[remaining_idx[0]]
-    print(f"\nThe final answer is: {answer}")
-    print(f"BEST={answer}")
+    if remaining_idx_len == 1:
+        answer = target_list[remaining_idx[0]]
+        print(f"\nThe final answer is: {answer}")
+        print(f"BEST={answer}")
+    else:
+        print("\nNo words match that feedback!")
 
